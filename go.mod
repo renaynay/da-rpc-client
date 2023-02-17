@@ -1,8 +1,11 @@
-module github.com/renaynay/rpc-client
+module github.com/renaynay/da-rpc-client
 
 go 1.19
 
-require github.com/celestiaorg/celestia-node v0.7.0-rc4
+require (
+	cosmossdk.io/math v1.0.0-beta.6
+	github.com/celestiaorg/celestia-node v0.7.0-rc7
+)
 
 require (
 	cloud.google.com/go v0.105.0 // indirect
@@ -11,7 +14,6 @@ require (
 	cloud.google.com/go/iam v0.7.0 // indirect
 	cloud.google.com/go/storage v1.27.0 // indirect
 	cosmossdk.io/errors v1.0.0-beta.7 // indirect
-	cosmossdk.io/math v1.0.0-beta.6 // indirect
 	filippo.io/edwards25519 v1.0.0-rc.1 // indirect
 	github.com/99designs/go-keychain v0.0.0-20191008050251-8e49817e8af4 // indirect
 	github.com/99designs/keyring v1.2.1 // indirect
