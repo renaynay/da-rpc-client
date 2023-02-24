@@ -34,9 +34,9 @@ func fillBlocks(token, addr, token2, addr2 string) {
 		go func() {
 			nID := make([]byte, 8)
 			rand.Read(nID)
-			data := make([]byte, 1005000) // todo configure this
+			data := make([]byte, 1000000) // todo configure this
 			rand.Read(data)
-			resp, err := client1.State.SubmitPayForBlob(context.Background(), nID, data, math.NewInt(500000), 90000000)
+			resp, err := client1.State.SubmitPayForBlob(context.Background(), nID, data, math.NewInt(30000), 9000000)
 			if err != nil {
 				panic(err)
 			}
